@@ -1,0 +1,18 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.background-image {
+    background-image: url("room.webp");
+    height: 100%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.no-distance {
+    margin: 0;
+    padding: 0;
+}
