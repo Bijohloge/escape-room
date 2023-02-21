@@ -6,11 +6,11 @@ function setNames() {
 }
 
 function showLearningApp() {
-    var element = document.getElementById("learningapps");
+    var element = document.getElementById("overlay");
     element.style.display = "block";
 }
 
 function closeLearningApp() {
-    var element = document.getElementById("learningapps");
+    var element = document.getElementById("overlay");
     element.style.display = "none";
 }
