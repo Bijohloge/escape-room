@@ -4,12 +4,19 @@ body, html {
 }
 
 .background-image {
-    background-image: url("room.webp");
+    position: relative;
+    background-image: url("b.png");
     height: 100%;
   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .no-distance {
