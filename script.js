@@ -1,29 +1,35 @@
 let name = "name"; 
-let isLearningApp = false;
-let isCodeInput = false;
 
 function showLearningApp() {
+    closeOverlay();
     var overlay = document.getElementById("overlay");
     var la = document.getElementById("learningappsdiv");
-    isLearningApp = !isLearningApp;
-    if (isLearningApp) {
-        overlay.style.display = "block";
-        la.style.display = "block";
-    } else {
-        overlay.style.display = "none";
-        la.style.display = "none";
-    }
+    overlay.style.display = "block";
+    la.style.display = "block";
 }
 
 function showCodeInput() {
+    closeOverlay();
     var overlay = document.getElementById("overlay");
     var codepad = document.getElementById("code-pad");
-    isCodeInput = !isCodeInput;
-    if (isCodeInput) {
-        overlay.style.display = "block";
-        codepad.style.display = "block";
-    } else {
-        overlay.style.display = "none";
-        codepad.style.display = "none";
+    overlay.style.display = "block";
+    codepad.style.display = "block";
+    
+}
+
+function closeOverlay() {
+    var overlay = document.getElementById("overlay");
+    var codepad = document.getElementById("code-pad");
+    var la = document.getElementById("learningappsdiv");
+
+    overlay.style.display = "none";
+    codepad.style.display = "none";
+    la.style.display = "none";
+}
+
+function checkInput() {
+    var code = document.getElementById("code-input").value;
+    if (code == "123") {
+        window.location.href = "https://bijohloge.github.io/escape-room/";
     }
 }

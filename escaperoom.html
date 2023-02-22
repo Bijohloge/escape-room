@@ -16,22 +16,14 @@
                 <img src="images/Glücksrad.svg" id="glücksrad">
                 <img src="images/Tür(1).svg" id="tür">
                 <img src="images/Türschloss.svg" id="türschloss">
+                <img src="images/Laplace Zettel.svg" alt="">
                 <p id="test"></p>
             </div>
             
             <div class="overlay" id="overlay">
-                <div>
-                    <button onclick="showLearningApp()" id="close">Close</button>
-                    <div class="learningappsdiv">
-                        
-                        <iframe id="learningappsdiv" src="https://learningapps.org/watch?v=pdn4w36x323" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-                    </div>
-                </div>
-                
-                
-                
+                <button onclick="closeOverlay()" id="close">Close</button>
+                <iframe id="learningappsdiv" src="https://learningapps.org/watch?v=pdn4w36x323" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
                 <div id="code-pad">
-                    <button onclick="showCodeInput()" id="close">Close</button>
                     <input type="text" id="code-input">
                     <table>
                         <tr>
@@ -52,7 +44,7 @@
                         <tr>
                             <th>&lt-</th>
                             <th>0</th>
-                            <th>✓</th>
+                            <th><button onclick="checkInput()">✓</button></th>
                         </tr>
                     </table>
                 </div>
