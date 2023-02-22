@@ -1,5 +1,3 @@
-let name = "name"; 
-
 function showLearningApp() {
     closeOverlay();
     var overlay = document.getElementById("overlay");
