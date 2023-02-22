@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Escape-Room</title>
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="overlay.css">
+    <script src="script.js"></script>
+    <body>
+        <div class="background-image" id="div1">
+            <div class="content">
+                <h1 class="no-distance">Escape-Room</h1>
+                <input type="text" id="name-input">
+                <button onclick="showLearningApp()">Submit</button>
+                <img src="door.svg" id="door">
+                <p id="test"></p>
+            </div>
+            
+            <div class="overlay" id="overlay">
+                <div class="learningapps"></div>
+                    <button onclick="closeLearningApp()" id="close">Close</button>
+                    <iframe src="https://learningapps.org/watch?v=pdn4w36x323" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                </div>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
