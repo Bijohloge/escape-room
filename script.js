@@ -1,16 +1,29 @@
 let name = "name"; 
-
-function setNames() {
-    this.name = document.getElementById('name-input').value;
-    document.getElementById("test").innerHTML = this.name;
-}
+let isLearningApp = false;
+let isCodeInput = false;
 
 function showLearningApp() {
-    var element = document.getElementById("overlay");
-    element.style.display = "block";
+    var overlay = document.getElementById("overlay");
+    var la = document.getElementById("learningappsdiv");
+    isLearningApp = !isLearningApp;
+    if (isLearningApp) {
+        overlay.style.display = "block";
+        la.style.display = "block";
+    } else {
+        overlay.style.display = "none";
+        la.style.display = "none";
+    }
 }
 
-function closeLearningApp() {
-    var element = document.getElementById("overlay");
-    element.style.display = "none";
+function showCodeInput() {
+    var overlay = document.getElementById("overlay");
+    var codepad = document.getElementById("code-pad");
+    isCodeInput = !isCodeInput;
+    if (isCodeInput) {
+        overlay.style.display = "block";
+        codepad.style.display = "block";
+    } else {
+        overlay.style.display = "none";
+        codepad.style.display = "none";
+    }
 }

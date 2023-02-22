@@ -12,14 +12,49 @@
                 <h1 class="no-distance">Escape-Room</h1>
                 <input type="text" id="name-input">
                 <button onclick="showLearningApp()">Submit</button>
-                <img src="door.svg" id="door">
+                <button onclick="showCodeInput()"></button>
+                <img src="images/Glücksrad.svg" id="glücksrad">
+                <img src="images/Tür(1).svg" id="tür">
+                <img src="images/Türschloss.svg" id="türschloss">
                 <p id="test"></p>
             </div>
             
             <div class="overlay" id="overlay">
-                <div class="learningapps"></div>
-                    <button onclick="closeLearningApp()" id="close">Close</button>
-                    <iframe src="https://learningapps.org/watch?v=pdn4w36x323" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                <div>
+                    <button onclick="showLearningApp()" id="close">Close</button>
+                    <div class="learningappsdiv">
+                        
+                        <iframe id="learningappsdiv" src="https://learningapps.org/watch?v=pdn4w36x323" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                    </div>
+                </div>
+                
+                
+                
+                <div id="code-pad">
+                    <button onclick="showCodeInput()" id="close">Close</button>
+                    <input type="text" id="code-input">
+                    <table>
+                        <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                        </tr>
+                        <tr>
+                            <th>&lt-</th>
+                            <th>0</th>
+                            <th>✓</th>
+                        </tr>
+                    </table>
                 </div>
             </div>
             
