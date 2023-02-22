@@ -6,7 +6,7 @@ body, html {
 .background-image {
     position: relative;
     background-image: url("Escaperoom.svg");
-    height: 300%;
+    height: 100%;
   
     background-position: center;
     background-repeat: no-repeat;
