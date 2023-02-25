@@ -28,6 +28,14 @@ function closeOverlay() {
 function checkInput() {
     var code = document.getElementById("code-input").value;
     if (code == "123") {
-        window.location.href = "https://bijohloge.github.io/escape-room/";
+        window.localStorage.setItem("Test", "True");
     }
+}
+
+function onTürSchloss() {
+    showCodeInput();
+}
+
+function onTür() {
+    
 }

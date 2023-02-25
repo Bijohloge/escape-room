@@ -17,6 +17,8 @@ body, html {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .no-distance {
@@ -46,9 +48,45 @@ body, html {
     height: 50%;
 }   
 
+#glücksrad {
+    width: 5%;
+}
+
+#tür {
+    width: 13%;
+    left: 60%;
+    top: 40%;
+}
+
+.object-image {
+    width: 100%;
+    height: 100%;
+}
+
+#türschloss {
+    width: 5%;
+    left: 50%;
+    top: 50%;
+}
+
+#zettel {
+    width: 5%;
+}
+
 .learningappsdiv iframe {
     height: 100%;
     margin: 0;
 }
 
+.room-object {
+    position: absolute;
+    z-index: 8;
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
 
