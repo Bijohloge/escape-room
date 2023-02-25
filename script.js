@@ -1,7 +1,8 @@
-function showLearningApp() {
+function showLearningApp(url) {
     closeOverlay();
     var overlay = document.getElementById("overlay");
-    var la = document.getElementById("learningappsdiv");
+    var la = document.getElementById("learningapps");
+    la.setAttribute("src", url);
     overlay.style.display = "block";
     la.style.display = "block";
 }
@@ -18,7 +19,7 @@ function showCodeInput() {
 function closeOverlay() {
     var overlay = document.getElementById("overlay");
     var codepad = document.getElementById("code-pad");
-    var la = document.getElementById("learningappsdiv");
+    var la = document.getElementById("learningapps");
 
     overlay.style.display = "none";
     codepad.style.display = "none";
@@ -37,5 +38,5 @@ function onTürSchloss() {
 }
 
 function onTür() {
-    
+
 }

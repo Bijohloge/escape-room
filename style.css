@@ -37,7 +37,7 @@ body, html {
     height: 50%;
 }
 
-#learningappsdiv {
+#learningapps {
     display: none;
     border: 5px solid black;
     border-radius: 3px;
@@ -50,6 +50,7 @@ body, html {
 
 #glücksrad {
     width: 5%;
+    top: 70%;
 }
 
 #tür {
@@ -73,7 +74,7 @@ body, html {
     width: 5%;
 }
 
-.learningappsdiv iframe {
+.learningapps iframe {
     height: 100%;
     margin: 0;
 }

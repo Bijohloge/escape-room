@@ -15,14 +15,14 @@
                 <button onclick="showCodeInput()"></button>
                 <button class="room-object" id="tür" onclick=""><img src="images/Tür.svg" class="object-image"></button>
                 <button class="room-object" id="türschloss" onclick="onTürSchloss()"><img src="images/Türschloss.svg" class="object-image"></button>
-                <img src="images/Glücksrad.svg" id="glücksrad">
-                <img src="images/Laplace Zettel.svg" id="zettel">
-                <p id="test"></p>
+                <button class="room-object" id="glücksrad" onclick="showLearningApp('https://learningapps.org/watch?v=pabq9i6t523')"><img src="images/Glücksrad.svg" class="object-image"></button>
+                <button class="room-object" id="zettel" onclick="showLearningApp('https://learningapps.org/watch?v=pqrhjpv3t23')"><img src="images/Laplace Zettel.svg" class="object-image"></button>
+                
             </div>
             
             <div class="overlay" id="overlay">
                 <button onclick="closeOverlay()" id="close">Close</button>
-                <iframe id="learningappsdiv" src="https://learningapps.org/watch?v=pdn4w36x323" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                <iframe id="learningapps" src="" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
                 <div id="code-pad">
                     <input type="text" id="code-input">
                     <table>
