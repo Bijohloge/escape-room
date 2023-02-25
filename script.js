@@ -29,12 +29,8 @@ function closeOverlay() {
 function checkInput() {
     var code = document.getElementById("code-input").value;
     if (code == "123") {
-        window.localStorage.setItem("Test", "True");
+        window.localStorage.setItem("isDoorOpen", "True");
     }
-}
-
-function onTürSchloss() {
-    showCodeInput();
 }
 
 function onTür() {
