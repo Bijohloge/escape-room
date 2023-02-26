@@ -34,5 +34,9 @@ function checkInput() {
 }
 
 function onTür() {
-
+    if (window.localStorage.getItem("isDoorOpen") == "True") {
+        window.location.href = "https://bijohloge.github.io/escape-room/escaperoom2.html";
+    } else {
+        alert("Du musst erst den Code richtig eingeben bevor du Durch die Tür gehen darfst!!!");
+    }
 }

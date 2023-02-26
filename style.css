@@ -70,6 +70,10 @@ body, html {
     top: 50%;
 }
 
+#türschloss:hover {
+    width: 5.5%;
+}
+
 #zettel {
     width: 5%;
 }
