@@ -78,6 +78,12 @@ body, html {
     width: 5%;
 }
 
+#regal {
+    width: 5%;
+    left: 70%;
+    top: 40%;
+}
+
 .learningapps iframe {
     height: 100%;
     margin: 0;
