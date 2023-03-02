@@ -5,12 +5,12 @@ body, html {
 
 .background-image {
     position: relative;
-    background-image: url("Escaperoom.svg");
+    background-image: url("images/Escaperoom\ 16\ 9..svg");
     height: 100%;
   
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .content {
@@ -56,7 +56,17 @@ body, html {
 #tür {
     width: 17%;
     left: 57%;
-    top: 28%;
+    top: 25%;
+}
+
+#tisch {
+    width: 26%;
+    left: 22%;
+    top: 50%;
+}
+
+#lampe {
+    width: 17%;
 }
 
 .object-image {
