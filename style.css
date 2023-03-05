@@ -8,8 +8,12 @@ body, html {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
+<<<<<<< Updated upstream
     background-size: cover;
     
+=======
+    background-size: 100%;
+>>>>>>> Stashed changes
 }
 
 .content {
@@ -54,17 +58,18 @@ body, html {
 #tür {
     width: 17%;
     left: 57%;
-    top: 25%;
+    top: 28%;
 }
 
 #tisch {
     width: 26%;
-    left: 22%;
-    top: 50%;
+    left: 18%;
+    top: 55%;
 }
 
 #lampe {
     width: 17%;
+    left: 37%;
 }
 
 .object-image {
@@ -79,7 +84,7 @@ body, html {
 }
 
 #türschloss:hover {
-    width: 5%;
+    width: 6%;
 }
 
 #zettel {
