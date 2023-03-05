@@ -2,12 +2,12 @@
 <!-- Created with Vectornator (http://vectornator.io/) -->
 
 <svg
-   height="1388.0706"
+   height="1402.012"
    stroke-miterlimit="10"
    style="clip-rule:evenodd;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:round"
    version="1.1"
-   viewBox="0 0 1394.6396 1388.0706"
-   width="1394.6396"
+   viewBox="0 0 1402.8314 1402.0121"
+   width="1402.8314"
    xml:space="preserve"
    id="svg409"
    sodipodi:docname="Glücksrad.svg"
@@ -26,9 +26,9 @@
    inkscape:pagecheckerboard="0"
    inkscape:deskcolor="#d1d1d1"
    showgrid="false"
-   inkscape:zoom="0.35105526"
-   inkscape:cx="868.80908"
-   inkscape:cy="774.80679"
+   inkscape:zoom="0.99293422"
+   inkscape:cx="991.0022"
+   inkscape:cy="1137.034"
    inkscape:window-width="1920"
    inkscape:window-height="1017"
    inkscape:window-x="-8"
@@ -40,7 +40,7 @@
 <g
    id="Ebene-1"
    vectornator:layerName="Ebene 1"
-   transform="translate(-818.0893,-419.54404)">
+   transform="matrix(1.0058716,0,0,1.0107715,-822.89127,-424.06467)">
 <path
    d="m 880.726,1391.68 c -152.518,-348.08 7.999,-754.759 358.524,-908.351 350.53,-153.591 758.33,4.071 910.84,352.148 152.52,348.073 -7.99,754.763 -358.52,908.353 -350.53,153.59 -758.33,-4.07 -910.844,-352.15 z"
    fill="#918989"
