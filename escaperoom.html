@@ -22,29 +22,124 @@
                 <button onclick="closeOverlay()" id="close">Close</button>
                 <iframe id="learningapps" src="" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
                 <div id="code-pad">
-                    <input type="text" id="code-input">
-                    <table>
-                        <tr>
-                            <th>1</th>
-                            <th>2</th>
-                            <th>3</th>
-                        </tr>
-                        <tr>
-                            <th>4</th>
-                            <th>5</th>
-                            <th>6</th>
-                        </tr>
-                        <tr>
-                            <th>7</th>
-                            <th>8</th>
-                            <th>9</th>
-                        </tr>
-                        <tr>
-                            <th>&lt-</th>
-                            <th>0</th>
-                            <th><button onclick="checkInput()">✓</button></th>
-                        </tr>
-                    </table>
+                    <div class="code-background">
+                        <div class="code-top">
+                            <div id="code-light">
+
+                            </div>
+                            <div id="code-input-div">
+                                <span id="code-input">INPUT</span>
+                            </div>
+                        </div>
+                        <table>
+                            <tr>
+                                <th class="code-th">
+                                    <div class="code-container">
+                                        <input class="code-button" type="image" src="images/buttons/Button 1. Stufe.svg" onclick="buttonClick(1)">
+                                        <div class="wrapper2">
+                                            1
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="code-th">
+                                    <div class="code-container">
+                                        <input class="code-button" type="image" src="images/buttons/Button 1. Stufe.svg" onclick="buttonClick(2)">
+                                        <div class="wrapper2">
+                                            2
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="code-th">
+                                    <div class="code-container">
+                                        <input class="code-button" type="image" src="images/buttons/Button 1. Stufe.svg" onclick="buttonClick(3)">
+                                        <div class="wrapper2">
+                                            3
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="code-th">
+                                    <div class="code-container">
+                                        <input class="code-button" type="image" src="images/buttons/Button 1. Stufe.svg" onclick="buttonClick(4)">
+                                        <div class="wrapper2">
+                                            4
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="code-th">
+                                    <div class="code-container">
+                                        <input class="code-button" type="image" src="images/buttons/Button 1. Stufe.svg" onclick="buttonClick(5)">
+                                        <div class="wrapper2">
+                                            5
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="code-th">
+                                    <div class="code-container">
+                                        <input class="code-button" type="image" src="images/buttons/Button 1. Stufe.svg" onclick="buttonClick(6)">
+                                        <div class="wrapper2">
+                                            6
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="code-th">
+                                    <div class="code-container">
+                                        <input class="code-button" type="image" src="images/buttons/Button 1. Stufe.svg" onclick="buttonClick(7)">
+                                        <div class="wrapper2">
+                                            7
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="code-th">
+                                    <div class="code-container">
+                                        <input class="code-button" type="image" src="images/buttons/Button 1. Stufe.svg" onclick="buttonClick(8)">
+                                        <div class="wrapper2">
+                                            8
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="code-th">
+                                    <div class="code-container">
+                                        <input class="code-button" type="image" src="images/buttons/Button 1. Stufe.svg" onclick="buttonClick(9)">
+                                        <div class="wrapper2">
+                                            9
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th class="code-th">
+                                    <div class="code-container">
+                                        <input class="code-button" type="image" src="images/buttons/Button 1. Stufe.svg" onclick="buttonClick('del')">
+                                        <div class="wrapper2">
+                                            Del
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="code-th">
+                                    <div class="code-container">
+                                        <input class="code-button" type="image" src="images/buttons/Button 1. Stufe.svg" onclick="buttonClick(0)">
+                                        <div class="wrapper2">
+                                            0
+                                        </div>
+                                    </div>
+                                </th>
+                                <th class="code-th">
+                                    <div class="code-container">
+                                        <input class="code-button" type="image" src="images/buttons/Button 1. Stufe.svg" onclick="buttonClick('key')">
+                                        <div class="wrapper2">
+                                            key
+                                        </div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                     
                 </div>
             </div>
             

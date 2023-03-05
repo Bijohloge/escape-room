@@ -27,13 +27,12 @@ body, html {
 
 #code-pad {
     display: none;
-    border: 5px solid black;
-    border-radius: 3px;
-    width:70%;
+    width: auto;
     margin-top: 10%;
     margin-left: 15%;
     margin-right: 15%;
-    height: 50%;
+    height: auto;
+    justify-content: center;
 }
 
 #learningapps {
