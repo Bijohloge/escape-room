@@ -4,13 +4,12 @@ body, html {
 }
 
 .background-image {
-    position: relative;
     background-image: url("images/Escaperoom\ 16\ 9..svg");
     height: 100%;
-  
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 110%;
+    background-size: cover;
+    
 }
 
 .content {
