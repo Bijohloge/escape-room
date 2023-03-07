@@ -64,8 +64,8 @@ html {
 
 #tisch {
     width: 26%;
-    left: 20em;
-    top: 30em;
+    left: 20%;
+    top: 50%;
     z-index: 2;
 }
 
@@ -84,22 +84,22 @@ html {
 #türschloss {
     z-index: 4;
     width: 5%;
-    left: 80em;
-    top: 30em;
+    left: 75%;
+    top: 50%;
 }
 
 #zettel {
     z-index: 5;
     width: 17%;
     left: 18%;
-    top: 15em;
+    top: 26%;
 }
 
 #regal {
     z-index: 6;
     width: 20%;
     left: 37%;
-    top: 15em;
+    top: 24%;
 }
 
 .learningapps iframe {
