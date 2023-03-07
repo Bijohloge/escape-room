@@ -4,7 +4,7 @@ html {
     margin: 0;
 }
 
-.background-image {
+#background-image {
     background-image: url(images/Escaperoom\ 16\ 9..svg);
     height: 100%;
     width: auto;
@@ -14,10 +14,6 @@ html {
 
 .content {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .no-distance {
