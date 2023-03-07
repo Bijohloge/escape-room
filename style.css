@@ -5,12 +5,11 @@ html {
 }
 
 .background-image {
-    background-image: url("images/Escaperoom\ 16\ 9..svg");
+    background-image: url(images/Escaperoom\ 16\ 9..svg);
     height: 100%;
-    background-position: center;
+    width: auto;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100%;
+    background-position: center;
 }
 
 .content {
@@ -50,14 +49,18 @@ html {
 #glücksrad {
     width: 20%;
     top: 40%;
-    transform: rotate(90deg);
     transition-duration: 300ms;
 }
 
 #tür {
     width: 17%;
     left: 57%;
-    top: 28%;
+    top: 24%;
+}
+
+.tür-div {
+    background: url(images/Tür.svg);
+    background-size: cover;
 }
 
 #tisch {
