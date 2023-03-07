@@ -23,11 +23,12 @@ document.addEventListener('DOMContentLoaded', function(event) {
     }
     if (x == 0) {
         x = i * 16;
-        setWidth(x)
-
+        setWidth(x);
+        setHeight(y);
     } else {
         y = i * 9;
-        setHeight(y)
+        setHeight(y);
+        setWidth(x);
         console.log("y" + y);
     }
     var dTop = (height - y) / 2;
