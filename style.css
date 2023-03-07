@@ -45,16 +45,16 @@ html {
 #glücksrad {
     z-index: 4;
     width: 20%;
-    top: 30em;
-    left: 0em;
-    transition-duration: 300ms;
+    top: 0%;
+    left: 0%;
+    transition-duration: 10ms;
 }
 
 #tür {
     z-index: 1;
-    top: 17.5em;
+    top: 28.5%;
     width: 17%;
-    left: 60em;
+    left: 55%;
 }
 
 .tür-div {
@@ -73,7 +73,7 @@ html {
     z-index: 3;
     width: 17%;
     left: 37%;
-    top: -1em;
+    top: 0%;
 }
 
 .object-image {
