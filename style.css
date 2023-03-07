@@ -43,15 +43,18 @@ html {
 }
 
 #glücksrad {
+    z-index: 4;
     width: 20%;
-    top: 40%;
+    top: 30em;
+    left: 0em;
     transition-duration: 300ms;
 }
 
 #tür {
+    z-index: 1;
+    top: 17.5em;
     width: 17%;
-    left: 57%;
-    top: 24%;
+    left: 60em;
 }
 
 .tür-div {
@@ -61,13 +64,16 @@ html {
 
 #tisch {
     width: 26%;
-    left: 18%;
-    top: 55%;
+    left: 20em;
+    top: 30em;
+    z-index: 2;
 }
 
 #lampe {
+    z-index: 3;
     width: 17%;
     left: 37%;
+    top: -1em;
 }
 
 .object-image {
@@ -76,25 +82,24 @@ html {
 }
 
 #türschloss {
+    z-index: 4;
     width: 5%;
-    left: 75%;
-    top: 50%;
-}
-
-#türschloss:hover {
-    width: 6%;
+    left: 80em;
+    top: 30em;
 }
 
 #zettel {
+    z-index: 5;
     width: 17%;
     left: 18%;
-    top: 30%;
+    top: 15em;
 }
 
 #regal {
+    z-index: 6;
     width: 20%;
     left: 37%;
-    top: 25%;
+    top: 15em;
 }
 
 .learningapps iframe {
@@ -104,7 +109,6 @@ html {
 
 .room-object {
     position: absolute;
-    z-index: 8;
     background: none;
     color: inherit;
     border: none;
