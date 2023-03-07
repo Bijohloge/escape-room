@@ -4,8 +4,7 @@ html {
     margin: 0;
 }
 
-#background-image {
-    background-image: url(images/Escaperoom\ 16\ 9..svg);
+.background {
     height: 100%;
     width: auto;
     background-repeat: no-repeat;
@@ -21,16 +20,6 @@ html {
     padding: 0;
 }
 
-#code-pad {
-    display: none;
-    width: auto;
-    margin-top: 10%;
-    margin-left: 15%;
-    margin-right: 15%;
-    height: auto;
-    justify-content: center;
-}
-
 #learningapps {
     display: none;
     border: 5px solid black;
@@ -42,64 +31,9 @@ html {
     height: 65%;
 }
 
-#glücksrad {
-    z-index: 4;
-    width: 20%;
-    top: 0%;
-    left: 0%;
-    transition-duration: 10ms;
-}
-
-#tür {
-    z-index: 1;
-    top: 28.5%;
-    width: 17%;
-    left: 55%;
-}
-
-.tür-div {
-    background: url(images/Tür.svg);
-    background-size: cover;
-}
-
-#tisch {
-    width: 26%;
-    left: 20%;
-    top: 50%;
-    z-index: 2;
-}
-
-#lampe {
-    z-index: 3;
-    width: 17%;
-    left: 37%;
-    top: 0%;
-}
-
 .object-image {
     width: 100%;
     height: 100%;
-}
-
-#türschloss {
-    z-index: 4;
-    width: 5%;
-    left: 75%;
-    top: 50%;
-}
-
-#zettel {
-    z-index: 5;
-    width: 17%;
-    left: 18%;
-    top: 26%;
-}
-
-#regal {
-    z-index: 6;
-    width: 20%;
-    left: 37%;
-    top: 24%;
 }
 
 .learningapps iframe {
@@ -116,4 +50,17 @@ html {
     font: inherit;
     cursor: pointer;
     outline: inherit;
+}
+
+.overlay {
+    position: absolute;
+    display: none;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+
+#close {
+    float: right;
 }

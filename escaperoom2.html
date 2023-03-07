@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raum 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="escaperoom2.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
-    <h1>Raum 2</h1>
+    <div class="background" id="background-image">
+        <div class="content" id="content-div">
+            <button class="room-object" id="spielautomat" onclick="showLearningApp('https://learningapps.org/watch?v=pqrhjpv3t23')">
+                <img src="images/Spielautomat formatiert.svg" class="object-image">
+            </button>
+            <button class="room-object" id="glücksrad" onclick="showLearningApp('https://learningapps.org/watch?v=pqrhjpv3t23')">
+                <img src="images/Glücksrad Beine.svg" class="object-image">
+            </button>
+            <button class="room-object" id="würfel" onclick="showLearningApp('https://learningapps.org/watch?v=pqrhjpv3t23')">
+                <img src="images/würfel.png" class="object-image">
+            </button>
+        </div>
+        <div class="overlay" id="overlay">
+            <button onclick="closeOverlay()" id="close">Close</button>
+            <iframe id="learningapps" src="" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+        </div>
+    </div>
 </body>
+
 </html>

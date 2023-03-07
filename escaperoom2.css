@@ -1,0 +1,22 @@
+#background-image {
+    background-image: url(images/Escaperoom\ 16_9.svg);
+}
+
+#spielautomat {
+    z-index: 2;
+    width: 17%;
+}
+
+#glücksrad {
+    z-index: 3;
+    width: 10%;
+    top: 25%;
+    left: 25%;
+}
+
+#würfel {
+    z-index: 4;
+    width: 5%;
+    top: 50%;
+    left: 50%;
+}
