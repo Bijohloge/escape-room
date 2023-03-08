@@ -41,6 +41,10 @@
     top: 0%;
 }
 
+#lampe:hover {
+    cursor: default;
+}
+
 #türschloss {
     z-index: 4;
     width: 5%;
