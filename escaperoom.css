@@ -12,6 +12,10 @@
     justify-content: center;
 }
 
+#code-input {
+    font-size: x-large;
+}
+
 #glücksrad {
     z-index: 4;
     width: 20%;
@@ -64,4 +68,31 @@
     width: 20%;
     left: 37%;
     top: 24%;
+}
+
+.code-button {
+    background: none;
+    background-image: url("images/buttons/Button 1. Stufe.svg");
+    border: none;
+    padding: 0;
+    outline: inherit;
+    font-size: x-large;
+    color: black;
+}
+
+.code-button:hover {
+    cursor: pointer;
+    background-image: url("images/buttons/Button 2. Stufe.svg");
+}
+
+.code-button:active {
+    background-image: url("images/buttons/Button 3. Stufe.svg");
+}
+
+#key {
+    color: greenyellow;
+}
+
+#del {
+    color: red;
 }

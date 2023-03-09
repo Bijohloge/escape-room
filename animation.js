@@ -1,4 +1,4 @@
-var wheel = setInterval(spinWheel, 10);
+//var wheel = setInterval(spinWheel, 10);
 var rotation = 0;
 
 
