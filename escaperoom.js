@@ -1,4 +1,7 @@
 let codeString = "";
+document.addEventListener('DOMContentLoaded', function() {
+    setupSound();
+});
 
 function checkInput() {
     var code = document.getElementById("code-input").textContent;
@@ -37,5 +40,14 @@ function showCodeInput() {
     var codepad = document.getElementById("code-pad");
     overlay.style.display = "block";
     codepad.style.display = "flex";
+}
 
+function setupSound() {
+    let hoverSound = new Audio("sound/click.wav");
+    var elements = document.querySelectorAll('.code-button');
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].addEventListener('mouseover', (event) => {
+            hoverSound.play();
+        })
+    }
 }
