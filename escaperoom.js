@@ -1,13 +1,11 @@
 let codeString = "";
-document.addEventListener('DOMContentLoaded', function() {
-    setupSound();
-});
 
 function checkInput() {
     var code = document.getElementById("code-input").textContent;
     if (code == "123") {
         window.localStorage.setItem("isDoorOpen", "True");
         window.location.href = "https://bijohloge.github.io/escape-room/escaperoom2.html";
+        playSound("sound/mixkit-correct-answer-tone-2870.wav");
     } else {
         alert("Der Code ist Falsch!!");
     }
@@ -42,12 +40,7 @@ function showCodeInput() {
     codepad.style.display = "flex";
 }
 
-function setupSound() {
-    let hoverSound = new Audio("sound/click.wav");
-    var elements = document.querySelectorAll('.code-button');
-    for (let i = 0; i < elements.length; i++) {
-        elements[i].addEventListener('mouseover', (event) => {
-            hoverSound.play();
-        })
-    }
+function playSound(string) {
+    let sound = new Audio(string);
+    sound.play();
 }
