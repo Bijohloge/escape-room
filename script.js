@@ -37,6 +37,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 })
 
+setInterval(tick, 1000);
+
 function setHeight(h) {
     var content = document.getElementById("content-div");
     content.style.height = h + "px";
@@ -67,4 +69,24 @@ function closeOverlay() {
 
     overlay.style.display = "none";
     la.style.display = "none";
+}
+
+function tick() {
+    var item = window.localStorage.getItem('seconds');
+    if (item === null) {
+        console.log("is null")
+        window.localStorage.setItem('seconds', '3550');
+        displayTimer(3600);
+    } else {
+        item = Number(item);
+        item--;
+        window.localStorage.setItem('seconds', item);
+        displayTimer(item);
+    }
+}
+
+function displayTimer(seconds) {
+    var time = Math.floor(seconds / 60) + ":" + ((seconds % 60)).toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
+    var element = document.getElementById('timer');
+    element.innerHTML = time;
 }

@@ -52,6 +52,10 @@ html {
     outline: inherit;
 }
 
+#timer {
+    font-size: xx-large;
+}
+
 .overlay {
     position: absolute;
     display: none;
