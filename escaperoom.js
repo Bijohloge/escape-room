@@ -4,7 +4,6 @@ function checkInput() {
     var code = document.getElementById("code-input").textContent;
     if (code == "123") {
         window.localStorage.setItem("isDoorOpen", "True");
-        window.location.href = "https://bijohloge.github.io/escape-room/escaperoom2.html";
         playSound("sound/mixkit-correct-answer-tone-2870.wav");
     } else {
         alert("Der Code ist Falsch!!");
