@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(101, 101, 101);
+    background-color: rgb(77, 77, 77);
 }
 
 #background-image {
@@ -33,6 +33,13 @@ body {
     width: 5%;
     top: 85%;
     left: 75%;
+}
+
+#beutel {
+    z-index: 5;
+    width: 5%;
+    top: 74%;
+    left: 45%;
 }
 
 #glücksrad-beine {
