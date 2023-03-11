@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(224, 206, 180);
+}
+
 #background-image {
     background-image: url(images/Escaperoom\ 16\ 9..svg);
 }

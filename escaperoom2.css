@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(101, 101, 101);
+}
+
 #background-image {
     background-image: url(images/Escaperoom\ 16_9.svg);
 }
@@ -6,14 +10,15 @@
     z-index: 2;
     width: 17%;
     top: 45%;
-    left:25%
+    left: 25%
 }
+
 #symbole {
     z-index: 2;
     width: 9%;
     top: 51%;
     left: 26.65%;
-    z-index:1
+    z-index: 1
 }
 
 #glücksrad {
