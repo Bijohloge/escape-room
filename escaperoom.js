@@ -1,10 +1,16 @@
 let codeString = "";
 
+document.addEventListener('DOMContentLoaded', function() {
+    showIntro();
+    codeLight();
+});
+
 function checkInput() {
     var code = document.getElementById("code-input").textContent;
     if (code == "123") {
         window.localStorage.setItem("isDoorOpen", "True");
         playSound("sound/mixkit-correct-answer-tone-2870.wav");
+        codeLight();
     } else if (code == "456") {
         playBackgroundMusic();
     } else {
@@ -12,11 +18,32 @@ function checkInput() {
     }
 }
 
+function codeLight() {
+    var light = document.getElementById('code-light');
+    var item = window.localStorage.getItem("isDoorOpen");
+    if (item === null) {
+
+    } else {
+        light.style.backgroundColor = "green";
+    }
+}
+
+function showIntro() {
+    closeOverlay();
+    var div = document.getElementById("einführung");
+    var overlay = document.getElementById("overlay");
+    overlay.style.display = "block";
+    div.style.display = "block";
+}
+
 function buttonClick(input) {
     var code = document.getElementById("code-input");
     if (typeof input === "number") {
-        codeString += input;
-        code.textContent = codeString;
+        if (codeString.length < 10) {
+            codeString += input;
+            code.textContent = codeString;
+        }
+
     } else if (input == "del") {
         codeString = "";
         code.textContent = "";
@@ -55,6 +82,6 @@ function playBackgroundMusic() {
     console.log("Test");
     let audio = new Audio("sound/mixkit-fun-and-games-6.mp3");
     audio.loop = true;
-    audio.volume = 0.3;
+    audio.volume = 0.1;
     audio.play();
 }

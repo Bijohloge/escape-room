@@ -22,14 +22,15 @@
             <button class="room-object" id="tisch" onclick="showLearningApp('https://learningapps.org/watch?v=pabq9i6t523')"><img src="images/Schreibtisch.svg" class="object-image"></button>
             <button class="room-object no-click" id="lampe"><img src="images/Lampe.svg" class="object-image"></button>
             <button class="room-object" id="regal" onclick="showLearningApp('https://learningapps.org/watch?v=pv9zc900t23')"><img src="images/Regal.svg" class="object-image"></button>
+            <button class="room-object no-click" id="kleiderständer"><img src="images/Kleiderständer.svg" alt="" class="object-image"></button>
         </div>
 
         <div class="overlay" id="overlay">
             <div id="close-div">
                 <button onclick="closeOverlay()" id="close">✖</button>
             </div>
-            <iframe id="learningapps" src="" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-            <div id="code-pad">
+            <iframe id="learningapps" class="overlay-child" src="" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+            <div id="code-pad" class="overlay-child">
                 <div class="code-background">
                     <div class="code-top">
                         <div id="code-light">
@@ -86,8 +87,14 @@
                         </tr>
                     </table>
                 </div>
-
-
+            </div>
+            <div id="einführung" class="overlay-child">
+                <div id="prof-div">
+                    <img src="images/Professor 3.svg" alt="">
+                </div>
+                <div id="sprech-div">
+                    <input type="image" src="images/SB 1.svg">
+                </div>
             </div>
         </div>
 

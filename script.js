@@ -11,22 +11,19 @@ function showLearningApp(url) {
 
 function closeOverlay() {
     var overlay = document.getElementById("overlay");
-    var la = document.getElementById("learningapps");
-    var codepad = document.getElementById("code-pad");
+    var childs = document.querySelectorAll('.overlay-child');
 
-    if (document.contains(codepad)) {
-        codepad.style.display = "none";
+    for (let i = 0; i < childs.length; i++) {
+        childs[i].style.display = "none";
     }
-
     overlay.style.display = "none";
-    la.style.display = "none";
 }
 
 function tick() {
     var item = window.localStorage.getItem('seconds');
     if (item === null) {
         console.log("is null")
-        window.localStorage.setItem('seconds', '3550');
+        window.localStorage.setItem('seconds', '3600');
         displayTimer(3600);
     } else {
         item = Number(item);

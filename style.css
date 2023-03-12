@@ -2,6 +2,7 @@ body,
 html {
     height: 100%;
     margin: 0;
+    overflow: hidden;
 }
 
 .background {
@@ -58,6 +59,7 @@ html {
 
 .overlay {
     position: absolute;
+    background-color: rgb(128, 128, 128, 0.4);
     display: none;
     z-index: 999;
     width: 100%;

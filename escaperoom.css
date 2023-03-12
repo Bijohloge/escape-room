@@ -38,7 +38,7 @@ body {
 #tisch {
     width: 26%;
     left: 20%;
-    top: 50%;
+    top: 52%;
     z-index: 2;
 }
 
@@ -54,6 +54,13 @@ body {
     width: 5%;
     left: 65%;
     top: 50%;
+}
+
+#kleiderständer {
+    z-index: 10;
+    left: 75%;
+    top: 35%;
+    width: 8%;
 }
 
 #zettel {
@@ -95,4 +102,23 @@ body {
 
 #del {
     color: red;
+}
+
+#einführung {
+    display: none;
+}
+
+#prof-div {
+    display: inline-block;
+    width: 30%;
+    padding-top: 14%;
+    padding-left: 8%;
+}
+
+#sprech-div {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 20%;
 }
