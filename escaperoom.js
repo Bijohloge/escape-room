@@ -91,9 +91,12 @@ function playBackgroundMusic() {
 function bubbleClick() {
     sCounter += 1;
     pCounter += 1;
-    if (sCounter > 3) {
+    if (sCounter > 4) {
         playBackgroundMusic();
         closeOverlay();
+    }
+    if (pCounter > 3) {
+        pCounter = 1;
     }
     var profesor = document.getElementById("profesor");
     var bubble = document.getElementById("bubble");
