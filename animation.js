@@ -1,8 +1,10 @@
 let start = 0;
 let rotation = 0;
+let automatCounter = 0;
+let automatCounter2 = 0;
 
-function spinWheel(time) {
-    const elapsed = (time - start) / 1000;
+function spinWheel(elapsed) {
+
 
     var glücksrad = document.getElementById('animation-glücksrad');
     if (!document.contains(glücksrad)) return;
@@ -14,14 +16,35 @@ function spinWheel(time) {
         rotation = x;
     }
     glücksrad.style.transform = "rotate(" + Math.round(rotation) + "deg)";
-    start = time;
-    requestAnimationFrame(spinWheel);
+
+
 }
 
-requestAnimationFrame(spinWheel);
+requestAnimationFrame(animate);
 
-function animate() {
+function spinAutomat() {
+    var automat = document.getElementById('symbole-img');
+    if (!document.contains(automat)) return;
 
+    if (automatCounter > 20) {
+        automatCounter = 0;
+        automatCounter2 += 1;
+        if (automatCounter2 > 10) {
+            automatCounter2 = 1;
+        }
+        automat.src = "images/symbole/Symbole " + automatCounter2 + ".svg";
+    } else {
+        automatCounter += 1;
+    }
+}
+
+function animate(time) {
+    const elapsed = (time - start) / 1000;
+
+    spinWheel(elapsed);
+    spinAutomat(elapsed);
+    start = time;
+    requestAnimationFrame(animate);
 }
 
 function animateDoor() {
