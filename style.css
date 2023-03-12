@@ -87,3 +87,19 @@ html {
 .no-click:hover {
     cursor: default;
 }
+
+#sound {
+    border: 2px solid black;
+    border-radius: 2px;
+    left: 95%;
+    width: 2.5%;
+    height: 2.5%;
+}
+
+#music {
+    border: 2px solid black;
+    border-radius: 2px;
+    width: 2.5%;
+    height: 2.5%;
+    left: 97.5%;
+}

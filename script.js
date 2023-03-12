@@ -1,5 +1,9 @@
 setInterval(tick, 1000);
 
+document.addEventListener('DOMContentLoaded', function() {
+
+});
+
 function showLearningApp(url) {
     closeOverlay();
     var overlay = document.getElementById("overlay");
@@ -47,3 +51,14 @@ function playSound(string) {
     let sound = new Audio(string);
     sound.play();
 }
+
+function toggleMusic() {
+    alert("musik");
+    localStorage.setItem("Music", "True");
+}
+
+function toggleSound() {
+    alert("Sound");
+    localStorage.setItem("Sound", "True");
+}
+//♫🔊

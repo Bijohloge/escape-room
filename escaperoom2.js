@@ -6,6 +6,13 @@ var answer = [3, 4, 2, 6];
 
 document.addEventListener('DOMContentLoaded', function() {
     onPower();
+    if (localStorage.hasOwnProperty("hasCard")) {
+        var tres = document.getElementById("tresor").firstElementChild;
+        tres.src = "images/Tresor 2.svg";
+        localStorage.setItem("hasCard", "True");
+        var card = document.getElementById("card");
+        card.style.display = "block";
+    }
 });
 
 function openKasten() {
@@ -46,12 +53,26 @@ function onPower() {
     }
 }
 
+
+
 function showTresor() {
-    var kasten = document.getElementById("tresor-div");
-    var overlay = document.getElementById("overlay");
-    overlay.style.display = "block";
-    kasten.style.display = "block";
-    codeLight();
+    var item = window.localStorage.getItem("isTresorOpen");
+    if (item === null) {
+        var kasten = document.getElementById("tresor-div");
+        var overlay = document.getElementById("overlay");
+        overlay.style.display = "block";
+        kasten.style.display = "block";
+        codeLight();
+    } else {
+        if (!localStorage.hasOwnProperty("hasCard")) {
+            var tres = document.getElementById("tresor").firstElementChild;
+            tres.src = "images/Tresor 2.svg";
+            localStorage.setItem("hasCard", "True");
+            var card = document.getElementById("card");
+            card.style.display = "block";
+        }
+    }
+
 }
 
 function codeLight() {
@@ -79,12 +100,14 @@ function onPlate(id) {
     if (JSON.stringify(cols) == JSON.stringify(answer)) {
         window.localStorage.setItem("isTresorOpen", "True");
         playSound("sound/mixkit-correct-answer-tone-2870.wav");
+        var tres = document.getElementById("tresor").firstElementChild;
+        tres.src = "images/Tresor 1.svg";
         codeLight();
     }
 }
 
 function onTür() {
-    var item = window.localStorage.getItem("isTresorOpen");
+    var item = window.localStorage.getItem("hasCard");
     if (item === null) {
 
     } else {
