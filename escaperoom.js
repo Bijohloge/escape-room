@@ -22,11 +22,13 @@ function checkInput() {
 
 function codeLight() {
     var light = document.getElementById('code-light');
+    var schloss = document.getElementById('türschloss-img');
     var item = window.localStorage.getItem("isDoorOpen");
     if (item === null) {
 
     } else {
         light.style.backgroundColor = "green";
+        schloss.src = "images/code-pad-an.png";
     }
 }
 
