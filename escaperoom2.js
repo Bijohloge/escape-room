@@ -1,4 +1,4 @@
-var sicherungen = [true, false, true, false, true, false, true];
+var sicherungen = [true, false, true, false, true, false, true, false];
 
 function openKasten() {
     var kasten = document.getElementById("Sicherungskasten");
