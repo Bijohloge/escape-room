@@ -19,6 +19,7 @@
             <span id="timer">60:00</span>
             <button class="room-object" id="spielautomat" onclick="showLearningApp('https://learningapps.org/watch?v=pujvpzfca23')">
                 <img src="images/Spielautomat formatiert.svg" class="object-image">
+            </button>
             <button class="room-object" id="symbole" onclick="showLearningApp('https://learningapps.org/watch?v=pojb8bajc23')">
                     <img src="images/Symbole 1.svg" class="object-image">
             </button>
@@ -37,13 +38,16 @@
             <button class="room-object" id="glücksrad-pin" onclick="showLearningApp('https://learningapps.org/watch?v=pojb8bajc23')">
                 <img src="images/Pin Glücksrad.svg" class="object-image">
             </button>
+            <button class="room-object" id="tür" onclick="">
+                <img src="images/Tür Raum 2.svg" class="object-image">
+            </button>
         </div>
         <div class="overlay" id="overlay">
             <div id="close-div">
                 <button onclick="closeOverlay()" id="close">✖</button>
             </div>
 
-            <iframe id="learningapps" src="" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+            <iframe id="learningapps" class="overlay-child src=" " allowfullscreen="true " webkitallowfullscreen="true " mozallowfullscreen="true "></iframe>
         </div>
     </div>
 </body>

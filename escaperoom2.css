@@ -55,3 +55,11 @@ body {
     top: 66%;
     left: 65%;
 }
+
+#tür {
+    background-color: black;
+    z-index: 11;
+    width: 12.5%;
+    top: 41%;
+    left: 45%;
+}
