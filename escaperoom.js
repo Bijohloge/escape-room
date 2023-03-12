@@ -5,6 +5,8 @@ function checkInput() {
     if (code == "123") {
         window.localStorage.setItem("isDoorOpen", "True");
         playSound("sound/mixkit-correct-answer-tone-2870.wav");
+    } else if (code == "456") {
+        playBackgroundMusic();
     } else {
         playSound("sound/mixkit-game-show-buzz-in-3090.wav");
     }
@@ -32,6 +34,10 @@ function onTür() {
     }
 }
 
+function toggleCodePad() {
+    var x;
+}
+
 function showCodeInput() {
     closeOverlay();
     var overlay = document.getElementById("overlay");
@@ -43,4 +49,11 @@ function showCodeInput() {
 function playSound(string) {
     let sound = new Audio(string);
     sound.play();
+}
+
+function playBackgroundMusic() {
+    console.log("Test");
+    let audio = new Audio("sound/mixkit-fun-and-games-6.mp3");
+    audio.loop = true;
+    audio.play();
 }
