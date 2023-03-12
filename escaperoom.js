@@ -6,7 +6,7 @@ function checkInput() {
         window.localStorage.setItem("isDoorOpen", "True");
         playSound("sound/mixkit-correct-answer-tone-2870.wav");
     } else {
-        alert("Der Code ist Falsch!!");
+        playSound("sound/mixkit-game-show-buzz-in-3090.wav");
     }
 }
 
@@ -21,13 +21,14 @@ function buttonClick(input) {
     } else if (input == "key") {
         checkInput();
     }
+    playSound("sound/mixkit-cool-interface-click-tone-2568.wav");
 }
 
 function onTür() {
     if (window.localStorage.getItem("isDoorOpen") == "True") {
         window.location.href = "https://bijohloge.github.io/escape-room/escaperoom2.html";
     } else {
-        alert("Der Code ist Falsch!!");
+        playSound("sound/mixkit-game-show-buzz-in-3090.wav");
     }
 }
 
