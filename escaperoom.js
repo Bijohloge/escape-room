@@ -1,4 +1,6 @@
 let codeString = "";
+let sCounter = 1;
+let pCounter = 1;
 
 document.addEventListener('DOMContentLoaded', function() {
     showIntro();
@@ -84,4 +86,17 @@ function playBackgroundMusic() {
     audio.loop = true;
     audio.volume = 0.1;
     audio.play();
+}
+
+function bubbleClick() {
+    sCounter += 1;
+    pCounter += 1;
+    if (sCounter > 3) {
+        playBackgroundMusic();
+        closeOverlay();
+    }
+    var profesor = document.getElementById("profesor");
+    var bubble = document.getElementById("bubble");
+    bubble.src = "images/SB " + sCounter + ".svg";
+    profesor.src = "images/Professor " + pCounter + ".svg";
 }

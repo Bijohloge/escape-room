@@ -42,6 +42,13 @@ body {
     left: 80%;
 }
 
+#glücksrad-pin {
+    z-index: 8;
+    width: 2%;
+    top: 46%;
+    left: 71.25%;
+}
+
 #glücksrad-beine {
     z-index: 4;
     width: 15%;
