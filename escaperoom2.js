@@ -29,3 +29,7 @@ function showTresor() {
     overlay.style.display = "block";
     kasten.style.display = "flex";
 }
+
+function onPlate() {
+    alert("Test");
+}
