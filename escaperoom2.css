@@ -74,4 +74,10 @@ body {
 
 #Sicherungskasten {
     display: none;
+    position: relative;
+}
+
+#Sicherungskasten img {
+    width: 10%;
+    height: 10%;
 }
