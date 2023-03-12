@@ -30,14 +30,18 @@ function tick() {
         displayTimer(3600);
     } else {
         item = Number(item);
-        item--;
+        if (item > 0) {
+            item--;
+        }
         window.localStorage.setItem('seconds', item);
         displayTimer(item);
     }
 }
 
 function displayTimer(seconds) {
-    var time = Math.floor(seconds / 60) + ":" + ((seconds % 60)).toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
+    var time = (Math.floor(seconds / 60)).toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false }) +
+        ":" +
+        ((seconds % 60)).toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
     var element = document.getElementById('timer');
     element.innerHTML = time;
 }
