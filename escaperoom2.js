@@ -1,4 +1,4 @@
-var sicherungen = [true, false, true, false, true, false, true, false];
+var sicherungen = [false, false, false, false, false, false, false, false];
 
 function openKasten() {
     var kasten = document.getElementById("Sicherungskasten");
@@ -21,4 +21,11 @@ function sicherungsSchalter(id) {
     }
     schalter.firstElementChild.src = img;
 
+}
+
+function showTresor() {
+    var kasten = document.getElementById("tresor-div");
+    var overlay = document.getElementById("overlay");
+    overlay.style.display = "block";
+    kasten.style.display = "flex";
 }

@@ -43,9 +43,11 @@
                 <img src="images/Tür Raum 2.svg" class="object-image">
             </button>
             <button class="room-object" id="kasten" onclick="openKasten()">
-                <img src="images/Sicherungskasten.svg" class="object-image">
+                <img src="images/Sicherungskasten m Blende.svg" class="object-image">
             </button>
-            <button class="room-object" id="tresor" onclick=""></button>
+            <button class="room-object" id="tresor" onclick="showTresor()">
+                <img src="images/Tresor.svg" alt="" class="object-image">
+            </button>
         </div>
         <div class="overlay" id="overlay">
             <div id="close-div">
@@ -57,25 +59,25 @@
                 <div id="hintergrund">
                     <div id="inner">
                         <button class="switch" id="1" onclick="sicherungsSchalter(this.id)">
-                            <img class="sicherungsbutton"  src="images/Sicherung An.svg" alt="">
+                            <img class="sicherungsbutton"  src="images/Sicherung Aus.svg" alt="">
                         </button>
                         <button class="switch" id="2" onclick="sicherungsSchalter(this.id)">
                             <img class="sicherungsbutton"  src="images/Sicherung Aus.svg" alt="">
                         </button>
                         <button class="switch" id="3" onclick="sicherungsSchalter(this.id)">
-                            <img class="sicherungsbutton" src="images/Sicherung An.svg" alt="">
+                            <img class="sicherungsbutton" src="images/Sicherung Aus.svg" alt="">
                         </button>
                         <button class="switch" id="4" onclick="sicherungsSchalter(this.id)">
                             <img class="sicherungsbutton" src="images/Sicherung Aus.svg" alt="">
                         </button>
                         <button class="switch" id="5" onclick="sicherungsSchalter(this.id)">
-                            <img class="sicherungsbutton" src="images/Sicherung An.svg" alt="">
+                            <img class="sicherungsbutton" src="images/Sicherung Aus.svg" alt="">
                         </button>
                         <button class="switch" id="6" onclick="sicherungsSchalter(this.id)">
                             <img class="sicherungsbutton" src="images/Sicherung Aus.svg" alt="">
                         </button>
                         <button class="switch" id="7" onclick="sicherungsSchalter(this.id)">
-                            <img class="sicherungsbutton" src="images/Sicherung An.svg" alt="">
+                            <img class="sicherungsbutton" src="images/Sicherung Aus.svg" alt="">
                         </button>
                         <button class="switch" id="8" onclick="sicherungsSchalter(this.id)">
                             <img class="sicherungsbutton" src="images/Sicherung Aus.svg" alt="">
@@ -83,6 +85,24 @@
                     </div>
 
                 </div>
+            </div>
+
+            <div id="tresor-div">
+                <div id="tresor-inner">
+                    <div class="color-plate">
+
+                    </div>
+                    <div class="color-plate">
+
+                    </div>
+                    <div class="color-plate">
+
+                    </div>
+                    <div class="color-plate">
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
