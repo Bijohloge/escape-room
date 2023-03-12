@@ -84,7 +84,7 @@ function playBackgroundMusic() {
     console.log("Test");
     let audio = new Audio("sound/mixkit-fun-and-games-6.mp3");
     audio.loop = true;
-    audio.volume = 0.1;
+    audio.volume = 0.05;
     audio.play();
 }
 
