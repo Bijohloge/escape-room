@@ -33,11 +33,18 @@ function codeLight() {
 }
 
 function showIntro() {
+    var item = window.localStorage.getItem("tutorial");
+    if (item === null) {
+
+    } else {
+        return;
+    }
     closeOverlay();
     var div = document.getElementById("einführung");
     var overlay = document.getElementById("overlay");
     overlay.style.display = "block";
     div.style.display = "block";
+    window.localStorage.setItem("tutorial", "True");
 }
 
 function buttonClick(input) {
@@ -75,11 +82,6 @@ function showCodeInput() {
     var codepad = document.getElementById("code-pad");
     overlay.style.display = "block";
     codepad.style.display = "flex";
-}
-
-function playSound(string) {
-    let sound = new Audio(string);
-    sound.play();
 }
 
 function playBackgroundMusic() {
