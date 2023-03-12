@@ -22,3 +22,10 @@ html {
     left: 68%;
     top: 71.5%;
 }
+
+#prof {
+    z-index: 7;
+    width: 12%;
+    top: 30%;
+    left: 40%;
+}

@@ -62,3 +62,10 @@ img {
     top: 10%;
     left: 85%;
 }
+
+#prof {
+    z-index: 7;
+    width: 12%;
+    top: 70%;
+    left: 22%;
+}
