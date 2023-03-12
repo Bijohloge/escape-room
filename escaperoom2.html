@@ -41,13 +41,21 @@
             <button class="room-object" id="tür" onclick="">
                 <img src="images/Tür Raum 2.svg" class="object-image">
             </button>
+            <button class="room-object" id="kasten" onclick="openKasten()">
+                <img src="images/Sicherungskasten.svg" class="object-image">
+            </button>
         </div>
         <div class="overlay" id="overlay">
             <div id="close-div">
                 <button onclick="closeOverlay()" id="close">✖</button>
             </div>
 
-            <iframe id="learningapps" class="overlay-child src=" " allowfullscreen="true " webkitallowfullscreen="true " mozallowfullscreen="true "></iframe>
+            <iframe id="learningapps" class="overlay-child" src="" allowfullscreen="true " webkitallowfullscreen="true " mozallowfullscreen="true "></iframe>
+            <div id="Sicherungskasten">
+                <img src="images/Sicherung An.svg" alt="">
+                <img src="images/Sicherung An.svg" alt="">
+                <img src="images/Sicherung Aus.svg" alt="">
+            </div>
         </div>
     </div>
 </body>
