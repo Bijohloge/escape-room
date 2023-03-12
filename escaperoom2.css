@@ -32,14 +32,14 @@ body {
     z-index: 4;
     width: 5%;
     top: 85%;
-    left: 75%;
+    left: 30%;
 }
 
 #beutel {
     z-index: 5;
-    width: 5%;
+    width: 15%;
     top: 74%;
-    left: 50%;
+    left: 80%;
 }
 
 #glücksrad-beine {
