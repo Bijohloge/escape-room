@@ -42,3 +42,8 @@ function displayTimer(seconds) {
     var element = document.getElementById('timer');
     element.innerHTML = time;
 }
+
+function playSound(string) {
+    let sound = new Audio(string);
+    sound.play();
+}

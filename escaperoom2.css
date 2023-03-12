@@ -10,7 +10,7 @@ body {
     z-index: 2;
     width: 17%;
     top: 45%;
-    left: 25%
+    left: 25%;
 }
 
 #symbole {
@@ -65,11 +65,18 @@ body {
     left: 45%;
 }
 
+#türschloss {
+    z-index: 12;
+    width: 7.5%;
+    left: 52%;
+    top: 55%;
+}
+
 #kasten {
     z-index: 12;
     width: 10%;
-    top: 50%;
-    left: 50%;
+    top: 38%;
+    left: 58%;
 }
 
 #Sicherungskasten {
@@ -79,8 +86,8 @@ body {
 #tresor {
     z-index: 13;
     width: 10%;
-    left: 40%;
-    top: 20%;
+    left: 20%;
+    top: 25%;
 }
 
 #hintergrund {
@@ -121,8 +128,8 @@ body {
 
 .color-plate {
     border: 5px solid black;
-    height: 10em;
-    width: 10em;
+    aspect-ratio: 1 / 1;
+    width: 20%;
     display: inline-block;
     margin: 2%;
     background-color: green;
@@ -143,13 +150,31 @@ body {
 }
 
 #tresor-inner {
-    position: absolute;
-    top: 60%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    width: 80%;
+    display: flex;
+    float: left;
+    height: 50%;
+    width: 100%;
 }
 
 .sicherungsbutton:hover {
     cursor: pointer;
+}
+
+#output {
+    border: 3px solid black;
+}
+
+#code-light {
+    background-color: red;
+    border-radius: 50%;
+    border: 10px solid black;
+    width: 60px;
+    height: 60px;
+    margin-top: 2.5%;
+    margin-bottom: 7.5%;
+}
+
+#light-wrapper {
+    display: grid;
+    place-items: center;
 }

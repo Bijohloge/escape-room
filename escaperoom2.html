@@ -19,7 +19,7 @@
         <div class="content" id="content-div">
             <span id="timer">60:00</span>
             <button class="room-object" id="spielautomat" onclick="showLearningApp('https://learningapps.org/watch?v=pujvpzfca23')">
-                <img src="images/Spielautomat formatiert.svg" class="object-image">
+                <img src="images/EAB unbeleuchtet.svg" class="object-image">
             </button>
             <button class="room-object" id="symbole" onclick="showLearningApp('https://learningapps.org/watch?v=pujvpzfca23')">
                     <img src="images/Symbole 1.svg" id="symbole-img" class="object-image">
@@ -42,11 +42,17 @@
             <button class="room-object" id="tür" onclick="">
                 <img src="images/Tür Raum 2.svg" class="object-image">
             </button>
+            <button class="room-object" id="türschloss" onclick="">
+                <img src="images/Chipcard.svg" alt="" class="object-image">
+            </button>
             <button class="room-object" id="kasten" onclick="openKasten()">
                 <img src="images/Sicherungskasten m Blende.svg" class="object-image">
             </button>
             <button class="room-object" id="tresor" onclick="showTresor()">
                 <img src="images/Tresor.svg" alt="" class="object-image">
+            </button>
+            <button class="room-object no-click">
+                <img src="images/" alt="">
             </button>
         </div>
         <div class="overlay" id="overlay">
@@ -55,7 +61,7 @@
             </div>
 
             <iframe id="learningapps" class="overlay-child" src="" allowfullscreen="true " webkitallowfullscreen="true " mozallowfullscreen="true "></iframe>
-            <div id="Sicherungskasten">
+            <div id="Sicherungskasten" class="overlay-child">
                 <div id="hintergrund">
                     <div id="inner">
                         <button class="switch" id="1" onclick="sicherungsSchalter(this.id)">
@@ -87,18 +93,24 @@
                 </div>
             </div>
 
-            <div id="tresor-div">
+            <div id="tresor-div" class="overlay-child">
+                <div id="light-wrapper">
+                    <div id="code-light">
+
+                    </div>
+                </div>
+
                 <div id="tresor-inner">
-                    <div class="color-plate" onclick="onPlate()">
+                    <div class="color-plate" id="p1" onclick="onPlate(1)">
 
                     </div>
-                    <div class="color-plate">
+                    <div class="color-plate" id="p2" onclick="onPlate(2)">
 
                     </div>
-                    <div class="color-plate">
+                    <div class="color-plate" id="p3" onclick="onPlate(3)">
 
                     </div>
-                    <div class="color-plate">
+                    <div class="color-plate" id="p4" onclick="onPlate(4)">
 
                     </div>
                 </div>

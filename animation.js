@@ -40,9 +40,14 @@ function spinAutomat() {
 
 function animate(time) {
     const elapsed = (time - start) / 1000;
+    var item = localStorage.getItem("Power");
+    if (item === null) {
 
-    spinWheel(elapsed);
-    spinAutomat(elapsed);
+    } else {
+        spinWheel(elapsed);
+        spinAutomat(elapsed);
+    }
+
     start = time;
     requestAnimationFrame(animate);
 }
