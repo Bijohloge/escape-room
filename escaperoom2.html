@@ -18,25 +18,25 @@
     <div class="background" id="background-image">
         <div class="content" id="content-div">
             <span id="timer">60:00</span>
-            <button class="room-object" id="spielautomat" onclick="showLearningApp('https://learningapps.org/watch?v=pujvpzfca23')">
+            <button class="room-object" id="spielautomat" onclick="showLearningApp('spielautomat')">
                 <img src="images/EAB unbeleuchtet.svg" class="object-image">
             </button>
-            <button class="room-object" id="symbole" onclick="showLearningApp('https://learningapps.org/watch?v=pujvpzfca23')">
+            <button class="room-object" id="symbole" onclick="showLearningApp('spielautomat')">
                     <img src="images/Symbole 1.svg" id="symbole-img" class="object-image">
             </button>
-            <button class="room-object" id="glücksrad" onclick="showLearningApp('https://learningapps.org/watch?v=pf8n7hqy523');playSound('sound/wheel_fortune_1.mp3')">
+            <button class="room-object" id="glücksrad" onclick="showLearningApp('glücksrad');playSound('sound/wheel_fortune_1.mp3')">
                 <img src="images/Glücksrad.svg" id="animation-glücksrad" class="object-image">
             </button>
-            <button class="room-object" id="glücksrad-beine" onclick="showLearningApp('https://learningapps.org/watch?v=pf8n7hqy523')">
+            <button class="room-object" id="glücksrad-beine" onclick="showLearningApp('glücksrad')">
                 <img src="images/Glücksrad Beine.svg" class="object-image">
             </button>
-            <button class="room-object" id="würfel" onclick="showLearningApp('https://learningapps.org/watch?v=pdn4w36x323');playSound('sound/rolling-dice-2-102706(1).mp3');">
+            <button class="room-object" id="würfel" onclick="showLearningApp('würfel');playSound('sound/rolling-dice-2-102706(1).mp3');">
                 <img src="images/würfel.png" class="object-image">
             </button>
-            <button class="room-object" id="beutel" onclick="showLearningApp('https://learningapps.org/watch?v=pojb8bajc23');playSound('sound/movement-101711.mp3')">
+            <button class="room-object" id="beutel" onclick="showLearningApp('beutel');playSound('sound/movement-101711.mp3')">
                 <img src="images/Beutel.svg" alt="" class="object-image"> 
             </button>
-            <button class="room-object" id="glücksrad-pin" onclick="showLearningApp('https://learningapps.org/watch?v=pf8n7hqy523');playSound('sound/wheel_fortune_1.mp3')">
+            <button class="room-object" id="glücksrad-pin" onclick="showLearningApp('glücksrad');playSound('sound/wheel_fortune_1.mp3')">
                 <img src="images/Pin Glücksrad.svg" class="object-image">
             </button>
             <button class="room-object" id="tür" onclick="onTür()">
@@ -63,7 +63,7 @@
                 <button onclick="closeOverlay()" id="close">✖</button>
             </div>
 
-            <iframe id="learningapps" class="overlay-child" src="" allowfullscreen="true " webkitallowfullscreen="true " mozallowfullscreen="true "></iframe>
+            <iframe id="learningapps" class="overlay-child learningapps" src="" allowfullscreen="true " webkitallowfullscreen="true " mozallowfullscreen="true "></iframe>
             <div id="Sicherungskasten" class="overlay-child">
                 <div id="hintergrund">
                     <div id="inner">

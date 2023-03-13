@@ -18,10 +18,10 @@
             <span id="timer">60:00</span>
             <button class="room-object" id="tür" onclick="onTür()"><img src="images/Tür.svg" class="object-image"></button>
             <button class="room-object" id="türschloss" onclick="showCodeInput();playSound('sound/mixkit-gear-metallic-lock-sound-2858.wav')"><img src="images/code-pad-aus.png" id="türschloss-img" class="object-image"></button>
-            <button class="room-object" id="zettel" onclick="showLearningApp('https://learningapps.org/watch?v=pqrhjpv3t23');playSound('sound/mixkit-paper-crinkle-2385.wav')"><img src="images/Laplace Zettel(1).svg" class="object-image"></button>
-            <button class="room-object" id="tisch" onclick="showLearningApp('https://learningapps.org/watch?v=pabq9i6t523');playSound('sound/mixkit-big-paper-page-turn-1105.wav')"><img src="images/Schreibtisch.svg" class="object-image"></button>
+            <button class="room-object" id="zettel" onclick="showLearningApp('zettel');playSound('sound/mixkit-paper-crinkle-2385.wav')"><img src="images/Laplace Zettel(1).svg" class="object-image"></button>
+            <button class="room-object" id="tisch" onclick="showLearningApp('tisch');playSound('sound/mixkit-big-paper-page-turn-1105.wav')"><img src="images/Schreibtisch.svg" class="object-image"></button>
             <button class="room-object no-click" id="lampe"><img src="images/Lampe.svg" class="object-image"></button>
-            <button class="room-object" id="regal" onclick="showLearningApp('https://learningapps.org/watch?v=pv9zc900t23');playSound('sound/mixkit-falling-on-foil-748.wav')"><img src="images/Regal.svg" class="object-image"></button>
+            <button class="room-object" id="regal" onclick="showLearningApp('regal');playSound('sound/mixkit-falling-on-foil-748.wav')"><img src="images/Regal.svg" class="object-image"></button>
             <button class="room-object no-click" id="kleiderständer"><img src="images/Kleiderständer.svg" alt="" class="object-image"></button>
             <button class="room-object" id="music" onclick="toggleMusic()">
                 ♫
@@ -35,7 +35,9 @@
             <div id="close-div">
                 <button onclick="closeOverlay()" id="close">✖</button>
             </div>
-            <iframe id="learningapps" class="overlay-child" src="" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+            <iframe id="la-zettel" class="overlay-child learningapps" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+            <iframe id="la-tisch" class="overlay-child learningapps" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+            <iframe id="la-regal" class="overlay-child learningapps" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
             <div id="code-pad" class="overlay-child">
                 <div class="code-background">
                     <div class="code-top">

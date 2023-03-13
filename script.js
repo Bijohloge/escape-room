@@ -2,15 +2,29 @@ setInterval(tick, 1000);
 
 let music;
 
+const links = new Map([
+    ["zettel", "https://learningapps.org/watch?v=pqrhjpv3t23"],
+    ["tisch", "https://learningapps.org/watch?v=pabq9i6t523"],
+    ["regal", "https://learningapps.org/watch?v=pv9zc900t23"],
+    ["spielautomat", "https://learningapps.org/watch?v=pujvpzfca23"],
+    ["glücksrad", "https://learningapps.org/watch?v=pf8n7hqy523"],
+    ["würfel", "https://learningapps.org/watch?v=pdn4w36x323"],
+    ["beutel", "https://learningapps.org/watch?v=pojb8bajc23"]
+]);
+
 document.addEventListener('DOMContentLoaded', function() {
 
 });
 
 function showLearningApp(url) {
     closeOverlay();
+    var string = links.get(url);
     var overlay = document.getElementById("overlay");
-    var la = document.getElementById("learningapps");
-    la.setAttribute("src", url);
+    var la = document.getElementById("la-" + url);
+    if (la.getAttribute("src") === null) {
+        la.setAttribute("src", string);
+    }
+
     overlay.style.display = "block";
     la.style.display = "block";
 }
@@ -101,10 +115,8 @@ function toggleSound() {
 }
 
 function playBackgroundMusic(musicString) {
-    console.log("Test");
     music = new Audio(musicString);
     music.loop = true;
     music.volume = 0.05;
     music.play();
 }
-//♫🔊

@@ -21,7 +21,7 @@ html {
     padding: 0;
 }
 
-#learningapps {
+.learningapps {
     display: none;
     border: 5px solid black;
     border-radius: 3px;
