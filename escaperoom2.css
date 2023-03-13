@@ -196,3 +196,22 @@ body {
     display: grid;
     place-items: center;
 }
+
+#einführung {
+    display: none;
+}
+
+#prof-div {
+    display: inline-block;
+    width: 30%;
+    padding-top: 14%;
+    padding-left: 8%;
+}
+
+#sprech-div {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 20%;
+}
