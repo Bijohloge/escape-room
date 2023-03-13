@@ -55,8 +55,9 @@ html {
 }
 
 #timer {
+    position: absolute;
     font-size: 500%;
-    left: 5%;
+    left: 2.5%;
 }
 
 .overlay {
