@@ -3,8 +3,11 @@ var sicherungenAntwort = [true, true, false, true, false, false, true, true];
 var colors = ["green", "blue", "red", "black", "white", "aqua", "yellow", "orange"];
 var cols = [0, 0, 0, 0];
 var answer = [3, 4, 2, 6];
+let sCounter = 1;
+let pCounter = 1;
 
 document.addEventListener('DOMContentLoaded', function() {
+    showIntro();
     onPower();
     if (localStorage.hasOwnProperty("hasCard")) {
         var tres = document.getElementById("tresor").firstElementChild;
@@ -55,7 +58,30 @@ function onPower() {
     }
 }
 
+function showIntro() {
+    closeOverlay();
+    var div = document.getElementById("einführung");
+    var overlay = document.getElementById("overlay");
+    overlay.style.display = "block";
+    div.style.display = "block";
+}
 
+function bubbleClick() {
+    sCounter += 1;
+    pCounter += 1;
+    playSound('sound/mixkit-light-switch-sound-2579.wav');
+    if (sCounter > 2) {
+        playBackgroundMusic("sound/mixkit-infected-vibes-157.mp3");
+        closeOverlay();
+    }
+    if (pCounter > 3) {
+        pCounter = 1;
+    }
+    var profesor = document.getElementById("profesor");
+    var bubble = document.getElementById("bubble");
+    bubble.src = "images/Raum 2 SB " + sCounter + ".svg";
+    profesor.src = "images/Professor " + pCounter + ".svg";
+}
 
 function showTresor() {
     var item = window.localStorage.getItem("isTresorOpen");
@@ -111,10 +137,11 @@ function onPlate(id) {
 function onTür() {
     var item = window.localStorage.getItem("hasCard");
     console.log(item);
-    if (item === null) {playSound("sound/mixkit-game-show-buzz-in-3090.wav");
+    if (item === null) {
+        playSound("sound/mixkit-game-show-buzz-in-3090.wav");
 
     } else {
         window.location.href = "https://bijohloge.github.io/escape-room/end.html";
     }
-    
+
 }
