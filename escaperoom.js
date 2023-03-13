@@ -9,12 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function checkInput() {
     var code = document.getElementById("code-input").textContent;
-    if (code == "123") {
+    if (code == "244998") {
         window.localStorage.setItem("isDoorOpen", "True");
         playSound("sound/mixkit-correct-answer-tone-2870.wav");
         codeLight();
-    } else if (code == "456") {
-        playBackgroundMusic();
     } else {
         playSound("sound/mixkit-game-show-buzz-in-3090.wav");
     }

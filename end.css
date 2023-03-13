@@ -15,3 +15,17 @@ html {
 #background-image {
     background-image: url(images/Endscreen.svg);
 }
+
+#zeit {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 400%;
+    left: 68%;
+    top: 71.5%;
+}
+
+#prof {
+    z-index: 7;
+    width: 12%;
+    top: 30%;
+    left: 40%;
+}
