@@ -57,7 +57,7 @@ function buttonClick(input) {
 
 function onTür() {
     if (window.localStorage.getItem("isDoorOpen") == "True") {
-        window.location.href = "https://bijohloge.github.io/escape-room/escaperoom2.html";
+        window.location.href = "https://bijohloge.github.io/escape-room/escaperoom2.html"; playSound("sound/mixkit-epic-orchestra-transition-2290.wav")
     } else {
         playSound("sound/mixkit-game-show-buzz-in-3090.wav");
     }
@@ -78,6 +78,7 @@ function showCodeInput() {
 function bubbleClick() {
     sCounter += 1;
     pCounter += 1;
+    playSound('sound/mixkit-light-switch-sound-2579.wav');
     if (sCounter > 4) {
         playBackgroundMusic("sound/mixkit-fun-and-games-6.mp3");
         closeOverlay();

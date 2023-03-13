@@ -110,9 +110,11 @@ function onPlate(id) {
 
 function onTür() {
     var item = window.localStorage.getItem("hasCard");
-    if (item === null) {
+    console.log(item);
+    if (item === null) {playSound("sound/mixkit-game-show-buzz-in-3090.wav");
 
     } else {
         window.location.href = "https://bijohloge.github.io/escape-room/end.html";
     }
+    
 }
