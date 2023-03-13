@@ -127,6 +127,6 @@ function toggleSound() {
 function playBackgroundMusic(musicString) {
     music = new Audio(musicString);
     music.loop = true;
-    music.volume = 0.05;
+    music.volume = 0.01;
     music.play();
 }
