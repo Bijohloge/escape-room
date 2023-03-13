@@ -9,7 +9,7 @@ const links = new Map([
     ["spielautomat", "https://learningapps.org/watch?v=pujvpzfca23"],
     ["glücksrad", "https://learningapps.org/watch?v=pf8n7hqy523"],
     ["würfel", "https://learningapps.org/watch?v=pdn4w36x323"],
-    ["beutel", "https://learningapps.org/watch?v=pojb8bajc23"]
+    ["beutel", "https://learningapps.org/watch?v=pq3a3uqtj23"]
 ]);
 
 document.addEventListener('DOMContentLoaded', function() {
