@@ -31,18 +31,11 @@ function codeLight() {
 }
 
 function showIntro() {
-    var item = window.localStorage.getItem("tutorial");
-    if (item === null) {
-
-    } else {
-        return;
-    }
     closeOverlay();
     var div = document.getElementById("einführung");
     var overlay = document.getElementById("overlay");
     overlay.style.display = "block";
     div.style.display = "block";
-    window.localStorage.setItem("tutorial", "True");
 }
 
 function buttonClick(input) {
@@ -82,19 +75,11 @@ function showCodeInput() {
     codepad.style.display = "flex";
 }
 
-function playBackgroundMusic() {
-    console.log("Test");
-    let audio = new Audio("sound/mixkit-fun-and-games-6.mp3");
-    audio.loop = true;
-    audio.volume = 0.05;
-    audio.play();
-}
-
 function bubbleClick() {
     sCounter += 1;
     pCounter += 1;
     if (sCounter > 4) {
-        playBackgroundMusic();
+        playBackgroundMusic("sound/mixkit-fun-and-games-6.mp3");
         closeOverlay();
     }
     if (pCounter > 3) {

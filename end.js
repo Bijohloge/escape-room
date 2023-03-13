@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
         var time = (Math.floor(seconds / 60)).toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false }) +
             ":" +
             ((seconds % 60)).toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false });
-        alert(time);
         document.getElementById("zeit").innerHTML = time;
 
     }

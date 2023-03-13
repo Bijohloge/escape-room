@@ -1,5 +1,7 @@
 setInterval(tick, 1000);
 
+let music;
+
 document.addEventListener('DOMContentLoaded', function() {
 
 });
@@ -48,17 +50,61 @@ function displayTimer(seconds) {
 }
 
 function playSound(string) {
-    let sound = new Audio(string);
-    sound.play();
+    var item = window.localStorage.getItem('Sound');
+    if (item === null) {
+        let sound = new Audio(string);
+        sound.play();
+    } else {
+        if (item == "True") {
+            let sound = new Audio(string);
+            sound.play();
+        }
+    }
+
 }
 
 function toggleMusic() {
-    alert("musik");
-    localStorage.setItem("Music", "True");
+    var item = window.localStorage.getItem("Music");
+    var button = document.getElementById("music");
+    if (item === null) {
+        localStorage.setItem("Music", "False");
+        music.pause();
+        button.style.textDecoration = "line-through";
+    } else {
+        if (item == "True") {
+            localStorage.setItem("Music", "False");
+            button.style.textDecoration = "line-through";
+            music.pause();
+        } else {
+            localStorage.setItem("Music", "True");
+            button.style.textDecoration = "none";
+            music.play();
+        }
+    }
 }
 
 function toggleSound() {
-    alert("Sound");
-    localStorage.setItem("Sound", "True");
+    var item = window.localStorage.getItem("Sound");
+    var button = document.getElementById("sound");
+    if (item === null) {
+        localStorage.setItem("Sound", "False");
+        button.style.textDecoration = "line-through";
+    } else {
+        if (item == "True") {
+            localStorage.setItem("Sound", "False");
+            button.style.textDecoration = "line-through";
+        } else {
+            localStorage.setItem("Sound", "True");
+            button.style.textDecoration = "none";
+        }
+    }
+}
+
+function playBackgroundMusic(musicString) {
+    console.log("Test");
+    music = new Audio(musicString);
+    music.loop = true;
+    music.volume = 0.05;
+    music.play();
 }
 //♫🔊
