@@ -20,6 +20,8 @@ function openKasten() {
     var overlay = document.getElementById("overlay");
     overlay.style.display = "block";
     kasten.style.display = "block";
+    playSound("sound/mixkit-electricity-buzz-910(1).wav");
+    playSound("sound/mixkit-gear-metallic-lock-sound-2858.wav");
 }
 
 function sicherungsSchalter(id) {
