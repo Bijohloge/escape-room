@@ -3,6 +3,7 @@ html {
     height: 100%;
     margin: 0;
     background-color: rgb(201, 177, 131);
+    overflow: hidden;
 }
 
 .background {
@@ -10,22 +11,21 @@ html {
     width: auto;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-#background-image {
-    background-image: url(images/Endscreen.svg);
-}
-
-#zeit {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 400%;
-    left: 68%;
-    top: 71.5%;
+    text-align: center;
 }
 
 #prof {
-    z-index: 7;
-    width: 12%;
-    top: 30%;
-    left: 40%;
+    width: 20%;
+    height: 20%;
+    margin: 4%;
+}
+
+.t {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 400%;
+    margin: 2%;
+}
+
+.l {
+    font-size: 300%;
 }

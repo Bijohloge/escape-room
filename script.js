@@ -18,15 +18,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function showLearningApp(url) {
     closeOverlay();
-    if (url == "spielautomat"||url == "glücksrad" ){    
-         var item = window.localStorage.getItem("Power");
-         if (item === null) { return; 
+    if (url == "spielautomat" || url == "glücksrad") {
+        var item = window.localStorage.getItem("Power");
+        if (item === null) {
+            return;
 
-         }
-         else{ if(url=="glücksrad"){playSound('sound/wheel_fortune_1.mp3')}else{playSound('sound/mixkit-slot-machine-random-wheel-1930.wav')}
-         }
-     }
-     
+        } else {
+            if (url == "glücksrad") { playSound('sound/wheel_fortune_1.mp3') } else { playSound('sound/mixkit-slot-machine-random-wheel-1930.wav') }
+        }
+    }
+
     var string = links.get(url);
     var overlay = document.getElementById("overlay");
     var la = document.getElementById("la-" + url);
