@@ -58,12 +58,12 @@ function tick() {
     var item = window.localStorage.getItem('seconds');
     if (item === null) {
         console.log("is null")
-        window.localStorage.setItem('seconds', '3600');
-        displayTimer(3600);
+        window.localStorage.setItem('seconds', '0');
+        displayTimer(0);
     } else {
         item = Number(item);
         if (item > 0) {
-            item--;
+            item++;
         }
         window.localStorage.setItem('seconds', item);
         displayTimer(item);
