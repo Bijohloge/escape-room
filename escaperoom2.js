@@ -134,12 +134,6 @@ function onPlate(id) {
         element.style.backgroundColor = colors[0];
     }
     playSound("sound/mixkit-basketball-ball-hard-hit-2093 (1).wav");
-    var currentMillis = new Date().getTime();
-    if (currentMillis - millis > 1000) {
-        millis = currentMillis;
-    } else {
-        return;
-    }
     if (JSON.stringify(cols) == JSON.stringify(answer)) {
         window.localStorage.setItem("isTresorOpen", "True");
         playSound("sound/mixkit-correct-answer-tone-2870.wav");
