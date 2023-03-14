@@ -10,3 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
 });
+
+function playAgain() {
+    if (confirm("Willst du wirklich nochmal Spielen")) {
+        localStorage.clear();
+        window.location.href = "https://bijohloge.github.io/escape-room/";
+    } else {
+
+    }
+}

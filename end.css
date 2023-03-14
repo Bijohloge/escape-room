@@ -15,15 +15,29 @@ html {
 }
 
 #prof {
-    width: 20%;
-    height: 20%;
-    margin: 4%;
+    height: 10%;
+    width: 10%;
 }
 
 .t {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 400%;
     margin: 2%;
+}
+
+.container {
+    position: relative;
+}
+
+.again {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.inner {
+    display: inline-block;
 }
 
 .l {
