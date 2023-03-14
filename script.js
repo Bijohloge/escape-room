@@ -24,7 +24,12 @@ function showLearningApp(url) {
             return;
 
         } else {
-            if (url == "glücksrad") { playSound('sound/wheel_fortune_1.mp3') } else { playSound('sound/mixkit-slot-machine-random-wheel-1930.wav') }
+            if (url == "glücksrad") {
+                playSound('sound/wheel_fortune_1.mp3')
+            } else {
+                var x = playSound('sound/mixkit-slot-machine-random-wheel-1930.wav');
+                x.volume = 0.02;
+            }
         }
     }
 
@@ -78,10 +83,12 @@ function playSound(string) {
     if (item === null) {
         let sound = new Audio(string);
         sound.play();
+        return sound;
     } else {
         if (item == "True") {
             let sound = new Audio(string);
             sound.play();
+            return sound;
         }
     }
 

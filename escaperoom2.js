@@ -85,6 +85,13 @@ function bubbleClick() {
 
 function showTresor() {
     var item = window.localStorage.getItem("isTresorOpen");
+    try {
+        var sound = playSound('sound/mixkit-factory-metal-hard-hit-2980.wav');
+        sound.volume = 0.2;
+    } catch (error) {
+        console.log(error);
+    }
+
     if (item === null) {
         var kasten = document.getElementById("tresor-div");
         var overlay = document.getElementById("overlay");
