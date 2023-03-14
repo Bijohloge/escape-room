@@ -13,12 +13,21 @@ function checkInput() {
         window.localStorage.setItem("isDoorOpen", "True");
         playSound("sound/mixkit-correct-answer-tone-2870.wav");
         codeLight();
+        var tür = document.getElementById('tür').firstElementChild;
+        tür.style.boxShadow = "0 0 20px #9ecaed";
+        setTimeout(function() { closeOverlay() }, 1500);
     } else {
+
         playSound("sound/mixkit-game-show-buzz-in-3090.wav");
+
     }
+
 }
 
+
+
 function codeLight() {
+
     var light = document.getElementById('code-light');
     var schloss = document.getElementById('türschloss-img');
     var item = window.localStorage.getItem("isDoorOpen");

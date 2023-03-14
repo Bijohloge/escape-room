@@ -5,6 +5,7 @@ var cols = [0, 0, 0, 0];
 var answer = [3, 4, 2, 6];
 let sCounter = 1;
 let pCounter = 1;
+var millis = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
     showIntro();
@@ -122,6 +123,7 @@ function codeLight() {
 }
 
 function onPlate(id) {
+
     var element = document.getElementById("p" + id);
     var num = Number(id) - 1;
     if (cols[num] + 1 < colors.length) {
@@ -132,6 +134,12 @@ function onPlate(id) {
         element.style.backgroundColor = colors[0];
     }
     playSound("sound/mixkit-basketball-ball-hard-hit-2093 (1).wav");
+    var currentMillis = new Date().getTime();
+    if (currentMillis - millis > 1000) {
+        millis = currentMillis;
+    } else {
+        return;
+    }
     if (JSON.stringify(cols) == JSON.stringify(answer)) {
         window.localStorage.setItem("isTresorOpen", "True");
         playSound("sound/mixkit-correct-answer-tone-2870.wav");
