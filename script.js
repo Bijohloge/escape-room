@@ -62,9 +62,7 @@ function tick() {
         displayTimer(0);
     } else {
         item = Number(item);
-        if (item > 0) {
-            item++;
-        }
+        item++;
         window.localStorage.setItem('seconds', item);
         displayTimer(item);
     }
